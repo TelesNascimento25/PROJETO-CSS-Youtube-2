@@ -1,0 +1,158 @@
+@import url(./font.css/Roboto/Roboto-Regular.ttf);
+    * {
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+        margin: 6;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+body{
+    display: grid;
+    grid-template:
+    "header header header header" 70px
+    "sidebar main main main" 1000px
+    / 1fr 3fr 3fr 3fr ;
+}
+header{
+    grid-area: header;
+    padding: 20px;
+}
+
+main {
+    grid-area: main
+}
+
+aside{
+    grid-area: sidebar;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(10, 40px);
+    row-gap: 10px;
+    border: 3px solid
+    align-items: center;
+    text-align:start;
+    
+}
+.container-cima {
+    display: inline-flex;
+    border: 2px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-cima .parte-esquerda {
+    width: 144px;
+    height: 24px;
+    margin: 0px;
+    flex-direction: row;
+    display: inline-flex;
+    text-align: center;
+    padding: 0px, 24px, 0px, 24px;
+}
+.parte-esquerda #Youtube{
+    width: 90px;
+    height: 20px;
+    Top: 18px;
+    left: 80px;
+}
+.parte-esquerda #Tracinhos{
+    width: 24px;
+    height: 24px;
+}
+.barra-de-pesquisa{
+    height: 44px;
+    width: 404px;
+    top:8px;
+    left:526px;
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+}
+#barra-pesquisa {
+    width: 270px;
+    height: 25px;
+    top: 8px;
+    left: 526px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+}
+#botão-pesquisa{
+   width: 16px;
+   height: 16px;
+   align-self:center;
+   margin: auto;
+}
+#caixa-pesquisa{
+    width: 40px;
+    height: 25px;
+    top: 8px;
+    left: 873px;
+    border: 1px solid;
+    box-sizing: border-box;
+    color: #CCCCCC;
+    background: linear-gradient(rgba(204, 204, 204, 1) ,rgba(248, 248, 248, 1));
+}
+.parte-direita{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-around;
+    
+}
+#icone-de-video{
+        width: 24px;
+        height: 24px;
+        top: 5px;
+}
+#sininho {
+    width: 24px;
+    height: 24px;
+    top: 5px;
+}
+#foto-do-perfil {
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    left: 96px;
+    background-image: url(images/EU\ PORRA.jpg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.eu{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.features-aside {
+    display: inline-flex;
+}
+.letrinha {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 3px;
+    border: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.item {
+    padding-left: 10px;
+
+}
+
+.texto-debaixo {
+    display:inline-flex;
+
+}
+.canal {
+    padding: 2px;
+    margin-right: 3px;
+}
